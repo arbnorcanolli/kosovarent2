@@ -1,0 +1,63 @@
+/* 
+
+
+Colors -- 
+  Body: #f5f8ff
+  Color-Style: 60-30-10
+                #003471
+                    tints-shades: #F5F8FF, #1A83FF, #80BAFF
+
+                   white
+
+                      #FFD53B
+
+  Font: #333
+
+Font-size: Header-Title: 56px,
+           Header-Cta: 20px,
+
+           Testimonials-title: 20px,
+           Testimonials-description: 16px,
+
+           h2:32px
+           Services-desc : 20px 
+
+*/
+
+:root {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f8ff;
+    font-family: 'Raleway';
+    color: #333;
+}
+
+h2 {
+    font-size: 2.125rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+li {
+    list-style-type: none;
+}
+
+.btn {
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
