@@ -555,19 +555,19 @@ span .euro-sign {
 }
 
 .logo-desc-footer {
-    grid-column: span 1;
+    grid-column: 1 / 2;
 }
 
 .mid-footer {
-    grid-column: span 1;
+    grid-column: 2 / 3;
 }
 
 .footer-links {
-    grid-column: span 1;
+    grid-column: 3 / 4;
 }
 
 .footer-contact {
-    grid-column: span 1;
+    grid-column: 4 / 5;
 }
 
 
