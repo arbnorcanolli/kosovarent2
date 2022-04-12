@@ -484,6 +484,7 @@ span .euro-sign {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    row-gap: 8em;
 }
 
 .footer-cta {
@@ -546,5 +547,27 @@ span .euro-sign {
     cursor: pointer;
 }
 
+.footer-group {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
 
-/* ********HEADER END *********** */
+.logo-desc-footer {
+    grid-column: span 1;
+}
+
+.mid-footer {
+    grid-column: span 1;
+}
+
+.footer-links {
+    grid-column: span 1;
+}
+
+.footer-contact {
+    grid-column: span 1;
+}
+
+
+/* ********FOOTER END *********** */
