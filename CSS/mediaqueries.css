@@ -222,6 +222,32 @@
         .subscribe-btn {
             width: 35%;
         }
+        .container {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        .prices-car {
+            display: block;
+        }
+        .card-group {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5em;
+        }
+        .prices-card {
+            grid-column: span 4;
+            flex-direction: column;
+        }
+        .prices-body {
+            width: 100%;
+        }
+        .card-group {
+            width: 100%;
+        }
+        .title-img {
+            width: 100%;
+        }
     }
     
     @media (max-width:530px) {
@@ -233,5 +259,14 @@
         }
         .btn-shiko-me-shume {
             grid-column: span 7 / -1;
+        }
+        .spec-icons {
+            width: 1.8em;
+        }
+        .markat {
+            gap: 0.2em;
+        }
+        h2 {
+            font-size: 0.9rem;
         }
     }

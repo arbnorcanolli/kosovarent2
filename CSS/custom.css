@@ -142,7 +142,6 @@ a.kyçu-btn:hover {
 .header-title {
     font-size: 2.6rem;
     animation: title 0.7s ease-in;
-    margin-bottom: 1.5rem;
 }
 
 .title-border {
@@ -152,7 +151,7 @@ a.kyçu-btn:hover {
     background-color: #333;
     animation: title-border 0.9s ease-in;
     background-color: #333;
-    align-self: flex-start;
+    margin-bottom: 0.5em;
 }
 
 .toggler {
@@ -209,6 +208,8 @@ a.kyçu-btn:hover {
     font-size: 1.2rem;
     letter-spacing: 1px;
 }
+
+.title-border {}
 
 
 /* .header-title {
@@ -348,8 +349,8 @@ a.kyçu-btn:hover {
 
 .card-group {
     grid-column: 1 / -1;
-    gap: 1.5em;
     display: grid;
+    gap: 1.5em;
     grid-template-columns: repeat(12, 1fr);
 }
 
