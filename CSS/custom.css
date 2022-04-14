@@ -345,10 +345,12 @@ a.kyçu-btn:hover {
 
 .prices-title {
     grid-column: 1 / -1;
+    grid-row: span 1;
 }
 
 .card-group {
     grid-column: 1 / -1;
+    grid-row: span 1;
     display: grid;
     gap: 1.5em;
     grid-template-columns: repeat(12, 1fr);
@@ -535,7 +537,7 @@ span .euro-sign {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    row-gap: 8em;
+    row-gap: 6em;
 }
 
 .footer-cta {
@@ -606,6 +608,7 @@ span .euro-sign {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: flex-end;
+    gap: 2em;
     margin-bottom: 2em;
     font-weight: 500;
 }
@@ -614,7 +617,7 @@ span .euro-sign {
     grid-column: 1 / 2;
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 2em;
     align-items: center;
 }
 
@@ -640,7 +643,7 @@ span .euro-sign {
 .footer-contact {
     grid-column: 4 / 5;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 1em;
     justify-items: flex-end;
     margin-bottom: 1.5em;

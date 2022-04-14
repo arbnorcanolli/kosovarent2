@@ -150,6 +150,10 @@
         .subscribe-btn {
             font-size: .7rem;
         }
+        .daily-prices {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
     }
     
     @media (max-width:750px) {
@@ -173,7 +177,7 @@
             grid-template-columns: repeat(4, 1fr);
         }
         .prices-card {
-            grid-column: span 4;
+            grid-column: 1 / -1;
         }
         .spec-group p {
             font-size: 1rem
@@ -182,7 +186,7 @@
             font-size: 1.2rem;
         }
         .btn-shiko-me-shume {
-            grid-column: span 5 / -1;
+            grid-column: 1 / -1;
         }
         .footer-cta-title {
             font-size: 1.5rem;
@@ -193,6 +197,12 @@
         .subscribe input,
         .subscribe-btn {
             font-size: .7rem;
+        }
+        .logo-desc-footer,
+        .mid-footer,
+        .footer-links,
+        .footer-contact {
+            grid-column: span 2;
         }
     }
     
@@ -229,20 +239,17 @@
         .prices-car {
             display: block;
         }
-        .card-group {
+        /* .card-group {
             flex-direction: column;
             align-items: center;
             justify-content: center;
             gap: 0.5em;
-        }
+        } */
         .prices-card {
             grid-column: span 4;
             flex-direction: column;
         }
         .prices-body {
-            width: 100%;
-        }
-        .card-group {
             width: 100%;
         }
         .title-img {
@@ -268,5 +275,20 @@
         }
         h2 {
             font-size: 0.9rem;
+        }
+        .card-group {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .prices-card {
+            grid-column: span 4;
+        }
+        .logo-desc-footer p {
+            font-size: 0.8rem;
+        }
+        .logo-desc-footer,
+        .mid-footer,
+        .footer-links,
+        .footer-contact {
+            grid-column: span 4;
         }
     }
