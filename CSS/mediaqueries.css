@@ -20,6 +20,7 @@
         }
         .header-title {
             font-size: 2.3rem;
+            margin-bottom: 2em;
         }
         .header-title-group {
             display: flex;
@@ -223,7 +224,7 @@
         }
         .testimonial-card {
             grid-column: 1 / -1;
-            gap: 1.5em;
+            gap: 1.5rem;
         }
         .subscribe-btn {
             width: 35%;
@@ -277,11 +278,5 @@
         }
         .logo-desc-footer p {
             font-size: 0.8rem;
-        }
-        .logo-desc-footer,
-        .mid-footer,
-        .footer-links,
-        .footer-contact {
-            grid-column: span 4;
         }
     }

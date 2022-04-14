@@ -338,7 +338,6 @@ a.kyçu-btn:hover {
     grid-area: 4 / 1 / 5 / -1;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 2rem;
 }
 
 .prices-title {
