@@ -150,10 +150,6 @@
         .subscribe-btn {
             font-size: .7rem;
         }
-        .daily-prices {
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1rem;
-        }
     }
     
     @media (max-width:750px) {
@@ -226,15 +222,15 @@
             grid-template-columns: repeat(4, 1fr);
         }
         .testimonial-card {
-            grid-column: span 4;
-            gap: 1em;
+            grid-column: 1 / -1;
+            gap: 1.5em;
         }
         .subscribe-btn {
             width: 35%;
         }
         .container {
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
         }
         .prices-car {
             display: block;
@@ -272,9 +268,6 @@
         }
         .markat {
             gap: 0.2em;
-        }
-        h2 {
-            font-size: 0.9rem;
         }
         .card-group {
             grid-template-columns: repeat(4, 1fr);
