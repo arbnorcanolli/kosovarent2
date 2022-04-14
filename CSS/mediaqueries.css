@@ -273,10 +273,28 @@
         .card-group {
             grid-template-columns: repeat(4, 1fr);
         }
+        .footer-group {
+            gap: 1rem;
+            align-items: end;
+        }
         .prices-card {
             grid-column: span 4;
         }
+        .logo-desc-footer {
+            grid-column: span 4;
+        }
+        .footer-links {
+            grid-column: span 1;
+        }
+        .footer-contact {
+            grid-column: span 3;
+            margin-bottom: 0;
+            margin-left: 1rem;
+        }
         .logo-desc-footer p {
             font-size: 0.8rem;
+        }
+        .mid-footer {
+            display: none;
         }
     }
