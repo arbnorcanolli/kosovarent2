@@ -3,7 +3,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    column-gap: 1em;
+    gap: 5rem 1em;
     padding-left: 3.875rem;
     padding-right: 3.875rem;
 }
@@ -19,13 +19,14 @@
 }
 
 .nav-bar {
-    margin-top: 1.5em;
+    margin-top: 1.5rem;
     display: flex;
     color: #333;
 }
 
 .logo-nav {
-    width: 20%;
+    width: 4rem;
+    margin-right: 2.5em;
 }
 
 .menu-dropdown {
@@ -132,15 +133,16 @@ a.kyçu-btn:hover {
 }
 
 .hero-desc {
-    width: 45%;
+    width: 50%;
     position: absolute;
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
 }
 
 .header-title {
     font-size: 2.6rem;
     animation: title 0.7s ease-in;
+    margin-bottom: 1.5rem;
 }
 
 .title-border {
@@ -149,6 +151,8 @@ a.kyçu-btn:hover {
     border-radius: 0.5em;
     background-color: #333;
     animation: title-border 0.9s ease-in;
+    background-color: #333;
+    align-self: flex-start;
 }
 
 .toggler {
@@ -206,78 +210,6 @@ a.kyçu-btn:hover {
     letter-spacing: 1px;
 }
 
-@media (max-width:650px) {
-    .hero-desc {
-        width: 90%;
-        position: absolute;
-        top: 50%;
-        display: block;
-        transform: translateY(-50%);
-        text-align: center;
-    }
-    .hero-pic picture img {
-        min-width: 350px;
-        z-index: unset;
-        position: inherit;
-        visibility: hidden;
-    }
-    .header-title {
-        font-size: 2.5rem;
-    }
-    .hero-cta {
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width:750px) {
-    .hero-desc {
-        width: 90%;
-        display: block;
-        top: 90%;
-        text-align: center;
-    }
-    .hero-pic picture img {
-        min-width: 350px;
-        z-index: unset;
-        position: inherit;
-        display: block;
-    }
-    .header-title {
-        font-size: 2.5rem;
-    }
-    .hero-cta {
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width:1000px) {
-    .header {
-        margin-bottom: 3rem;
-    }
-    .hero-desc {
-        width: 90%;
-        display: block;
-        top: 90%;
-        margin-bottom: 1.5em;
-        text-align: center;
-    }
-    .hero-pic {
-        margin-top: 1.5em;
-    }
-    .hero-pic picture img {
-        z-index: unset;
-        position: inherit;
-        display: block;
-    }
-    .header-title {
-        font-size: 2.3rem;
-    }
-}
-
-.title-border {
-    display: none;
-}
-
 
 /* .header-title {
     font-size: calc(2.8em -2vw);
@@ -294,8 +226,7 @@ a.kyçu-btn:hover {
     display: grid;
     gap: 1em;
     grid-template-columns: repeat(12, 1fr);
-    gap: 15em 1em;
-    margin-bottom: 15em;
+    gap: 12rem 1rem;
 }
 
 
@@ -304,7 +235,9 @@ a.kyçu-btn:hover {
 .markat {
     grid-column: 1 / -1;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: -6em;
 }
 
 .marka-icon {
@@ -323,11 +256,11 @@ a.kyçu-btn:hover {
     max-width: 100%;
     grid-area: 2 / 1 / 3 / -1;
     display: grid;
-    gap: 15em 1em;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem 1rem;
 }
 
 .feature-card {
-    grid-row: 1 / 2;
     grid-column: span 3;
     background-color: white;
     display: flex;
@@ -367,24 +300,24 @@ a.kyçu-btn:hover {
 
 .services-group {
     grid-column: 1 / -1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
 }
 
 .services-group:first-child {
-    margin-bottom: 9.3em;
+    margin-bottom: 8em;
 }
 
 .services-content {
-    width: 45%;
+    grid-column: span 2;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .services-title {
-    margin-bottom: 3.5em;
+    margin-bottom: 1.5rem;
 }
 
 .service-desc {
@@ -392,7 +325,8 @@ a.kyçu-btn:hover {
 }
 
 .services-img {
-    width: 45%;
+    width: 100%;
+    grid-column: span 2;
 }
 
 
@@ -403,24 +337,33 @@ a.kyçu-btn:hover {
 
 .daily-prices {
     grid-area: 4 / 1 / 5 / -1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 4.3em;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+}
+
+.prices-title {
+    grid-column: 1 / -1;
 }
 
 .card-group {
-    display: flex;
-    gap: 3em;
-    align-self: stretch;
+    grid-column: 1 / -1;
+    gap: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 .prices-card {
+    grid-column: span 3;
     background-color: white;
     border-radius: 0.5em;
     padding: 1.5em 1.5em;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 .prices-car {
@@ -430,19 +373,36 @@ a.kyçu-btn:hover {
 .car-spec {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 1.5em;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .spec-group {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.title-img {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
+.spec-group p {
+    font-size: 0.9em;
+}
+
+.spec-icons {
+    width: 2.5em;
+}
+
 .prices-card-img {
-    max-width: 15em;
-    margin-bottom: 1.2em;
+    max-width: 70%;
+    align-self: center;
+    justify-self: center;
 }
 
 .price-card-footer {
@@ -469,7 +429,7 @@ span .euro-sign {
 }
 
 .btn-shiko-me-shume {
-    align-self: flex-end;
+    grid-column: span 3 / -1;
     padding: 0.5em 1.5em;
     font-size: 1.3em;
     background-color: #FFD53B;
@@ -483,11 +443,13 @@ span .euro-sign {
 
 .testimonials {
     grid-area: 5 / 1 / 6 / -1;
-    display: flex;
-    gap: 3em;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5em;
 }
 
 .testimonial-card {
+    grid-column: span 3;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -509,10 +471,18 @@ span .euro-sign {
     margin-bottom: 1.5em;
 }
 
-.testimonial-desc {
-    font-size: .8rem;
+.img-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    line-height: 1.5;
+}
+
+.testimonial-desc {
+    font-size: .78rem;
+    text-align: center;
+    line-height: 1.2;
     letter-spacing: 1px;
     font-weight: 500;
 }
@@ -570,6 +540,7 @@ span .euro-sign {
 .footer-cta {
     grid-column: 1 / -1;
     position: relative;
+    width: 100%;
 }
 
 .footer-cta img {
@@ -582,7 +553,7 @@ span .euro-sign {
 
 .subscribe-group {
     position: absolute;
-    width: 50%;
+    width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -602,11 +573,12 @@ span .euro-sign {
 
 .footer-cta-title {
     color: white;
+    text-align: center;
 }
 
 .subscribe input {
     font-family: 'Raleway';
-    padding: 0.5em 1em;
+    padding: 1em 1.2em;
     border-radius: 0.5em 0 0 0.5em;
     width: 70%;
     margin: 0;
@@ -614,11 +586,11 @@ span .euro-sign {
 }
 
 .subscribe-btn {
-    width: 30%;
+    width: 20%;
     border-radius: 0 0.5em 0.5em 0;
     font-family: 'Raleway';
     font-weight: 600;
-    padding: 0.5em 1em;
+    padding: 1em 1.2em;
     border: none;
     background-color: #FFD53B;
 }
@@ -646,7 +618,7 @@ span .euro-sign {
 }
 
 .logo-desc-footer img {
-    width: 6em;
+    width: 6rem;
 }
 
 .footer-desc {

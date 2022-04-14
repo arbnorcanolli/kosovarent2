@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Signika:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./CSS/general.css" />
     <link rel="stylesheet" href="./CSS/custom.css" />
+    <link rel="stylesheet" href="./CSS/mediaqueries.css">
     <title>KosovaRent</title>
 </head>
 
@@ -30,7 +31,7 @@
 
 
 
-                    <img class="logo-nav" src="./Media/Photo/HD/Logo.png" alt="Logo e biznesit" />
+                    <img src="./Media/Photo/HD/Logo.png" alt="Logo e biznesit" />
                 </a>
 
                 <div class="menu-dropdown">
@@ -66,22 +67,26 @@
                 </div>
             </nav>
 
-            <div class="hero-desc">
-                <div class="header-title-group">
-                    <h1 class="header-title">JENI NË KËRKIM TË VETURAVE ME QËRA?</h1>
-                    <div class="title-border"></div>
+            <div class="header-hero-section">
+                <div class="hero-desc">
+                    <div class="header-title-group">
+                        <div class="title-border"></div>
+                        <h1 class="header-title">JENI NË KËRKIM TË VETURAVE ME QËRA?</h1>
 
-                    <button class="btn hero-cta">Gjej veturën e preferuar</button>
+
+                        <button class="btn hero-cta">Gjej veturën e preferuar</button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="hero-pic">
+                <div class="hero-pic">
 
-                <picture>
-                    <source media="(max-width: 1000px)" srcset="./Media/Photo/HD/Hero-img-1000.png" />
-                    <source media="(max-width: 1500px)" srcset="./Media/Photo/HD/HeaderPage2.png" />
-                    <img src="./Media/Photo/HD/HeaderPage2.png" alt="Header" />
-                </picture>
+                    <picture>
+                        <source media="(max-width: 1000px)" srcset="./Media/Photo/HD/Hero-img-1000.png" />
+                        <source media="(max-width: 1500px)" srcset="./Media/Photo/HD/HeaderPage2.png" />
+                        <img src="./Media/Photo/HD/HeaderPage2.png" alt="Header" />
+                    </picture>
+                </div>
+
             </div>
         </header>
 
@@ -131,7 +136,7 @@
             <section class="services" id="sherbimet">
                 <div class="services-group">
                     <img class="services-img" src="./Media/Photo/HD/ore24.svg" alt="24ore" />
-                    <div class="services-content">
+                    <div class="services-content first-service">
                         <h2 class="services-title">
                             Përjetoni eksperiencë fantastike me veturat tona në çdo kohë
                         </h2>
@@ -164,102 +169,123 @@
 
                 <section class="card-group">
                     <div class="prices-card">
-                        <h3 class="prices-car">Golf VII</h3>
-                        <img class="prices-card-img" src="./Media/Photo/HD/golfvii.png" alt="Golf vii" />
 
-                        <div class="car-spec">
-                            <div class="spec-group">
-                                <img class="spec-icons" src="./Media/Photo/HD/ulese.png" alt="Ulse" />
-                                <p>4 ulëse</p>
-                            </div>
-                            <div class="spec-group">
-                                <img class="spec-icons" src="./Media/Photo/HD/manual.png" alt="Manual" />
-                                <p>Manual</p>
-                            </div>
-                            <div class="spec-group">
-                                <img class="spec-icons" src="./Media/Photo/HD/diesel.png" alt="Diesel" />
-                                <p>Diesel</p>
-                            </div>
+
+                        <div class="title-img">
+                            <h3 class="prices-car">Golf VII</h3>
+                            <img class="prices-card-img" src="./Media/Photo/HD/golfvii.png" alt="Golf vii" />
                         </div>
 
-                        <div class="price-card-footer">
-                            <p class="price">25<span>€</span> Dita</p>
-                            <a class="btn rezervo-btn" href="#">Rezervo</a>
-                        </div>
-                    </div>
-
-                    <div class="prices-card">
-                        <h3 class="prices-car">Golf VII</h3>
-                        <img class="prices-card-img" src="./Media/Photo/HD/golfvii.png" alt="Golf vii" />
-
-                        <div class="car-spec">
-                            <div class="spec-group">
-                                <img class="spec-icons" src="./Media/Photo/HD/ulese.png" alt="Ulse" />
-                                <p>4 ulëse</p>
+                        <div class="prices-body">
+                            <div class="car-spec">
+                                <div class="spec-group">
+                                    <img class="spec-icons" src="./Media/Photo/HD/ulese.png" alt="Ulse" />
+                                    <p>4 ulëse</p>
+                                </div>
+                                <div class="spec-group">
+                                    <img class="spec-icons" src="./Media/Photo/HD/manual.png" alt="Manual" />
+                                    <p>Manual</p>
+                                </div>
+                                <div class="spec-group">
+                                    <img class="spec-icons" src="./Media/Photo/HD/diesel.png" alt="Diesel" />
+                                    <p>Diesel</p>
+                                </div>
                             </div>
-                            <div class="spec-group">
-                                <img class="spec-icons" src="./Media/Photo/HD/manual.png" alt="Manual" />
-                                <p>Manual</p>
-                            </div>
-                            <div class="spec-group">
-                                <img class="spec-icons" src="./Media/Photo/HD/diesel.png" alt="Diesel" />
-                                <p>Diesel</p>
-                            </div>
-                        </div>
 
-                        <div class="price-card-footer">
-                            <p class="price">25<span>€</span> Dita</p>
-                            <a class="btn rezervo-btn" href="#">Rezervo</a>
+                            <div class="price-card-footer">
+                                <p class="price">25<span>€</span> </p>
+                                <a class="btn rezervo-btn" href="#">Rezervo</a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="prices-card">
-                        <h3 class="prices-car">Golf VII</h3>
-                        <img class="prices-card-img" src="./Media/Photo/HD/golfvii.png" alt="Golf vii" />
 
-                        <div class="car-spec">
-                            <div class="spec-group">
-                                <img class="spec-icons" src="./Media/Photo/HD/ulese.png" alt="Ulse" />
-                                <p>4 ulëse</p>
-                            </div>
-                            <div class="spec-group">
-                                <img class="spec-icons" src="./Media/Photo/HD/manual.png" alt="Manual" />
-                                <p>Manual</p>
-                            </div>
-                            <div class="spec-group">
-                                <img class="spec-icons" src="./Media/Photo/HD/diesel.png" alt="Diesel" />
-                                <p>Diesel</p>
-                            </div>
+                        <div class="title-img">
+                            <h3 class="prices-car">Golf VII</h3>
+                            <img class="prices-card-img" src="./Media/Photo/HD/golfvii.png" alt="Golf vii" />
                         </div>
 
-                        <div class="price-card-footer">
-                            <p class="price">25<span>€</span> Dita</p>
-                            <a class="btn rezervo-btn" href="#">Rezervo</a>
+                        <div class="prices-body">
+                            <div class="car-spec">
+                                <div class="spec-group">
+                                    <img class="spec-icons" src="./Media/Photo/HD/ulese.png" alt="Ulse" />
+                                    <p>4 ulëse</p>
+                                </div>
+                                <div class="spec-group">
+                                    <img class="spec-icons" src="./Media/Photo/HD/manual.png" alt="Manual" />
+                                    <p>Manual</p>
+                                </div>
+                                <div class="spec-group">
+                                    <img class="spec-icons" src="./Media/Photo/HD/diesel.png" alt="Diesel" />
+                                    <p>Diesel</p>
+                                </div>
+                            </div>
+
+                            <div class="price-card-footer">
+                                <p class="price">25<span>€</span></p>
+                                <a class="btn rezervo-btn" href="#">Rezervo</a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="prices-card">
-                        <h3 class="prices-car">Golf VII</h3>
-                        <img class="prices-card-img" src="./Media/Photo/HD/golfvii.png" alt="Golf vii" />
 
-                        <div class="car-spec">
-                            <div class="spec-group">
-                                <img class="spec-icons" src="./Media/Photo/HD/ulese.png" alt="Ulse" />
-                                <p>4 ulëse</p>
-                            </div>
-                            <div class="spec-group">
-                                <img class="spec-icons" src="./Media/Photo/HD/manual.png" alt="Manual" />
-                                <p>Manual</p>
-                            </div>
-                            <div class="spec-group">
-                                <img class="spec-icons" src="./Media/Photo/HD/diesel.png" alt="Diesel" />
-                                <p>Diesel</p>
-                            </div>
+                        <div class="title-img">
+                            <h3 class="prices-car">Golf VII</h3>
+                            <img class="prices-card-img" src="./Media/Photo/HD/golfvii.png" alt="Golf vii" />
                         </div>
 
-                        <div class="price-card-footer">
-                            <p class="price">25<span>€</span> Dita</p>
-                            <a class="btn rezervo-btn" href="#">Rezervo</a>
+                        <div class="prices-body">
+                            <div class="car-spec">
+                                <div class="spec-group">
+                                    <img class="spec-icons" src="./Media/Photo/HD/ulese.png" alt="Ulse" />
+                                    <p>4 ulëse</p>
+                                </div>
+                                <div class="spec-group">
+                                    <img class="spec-icons" src="./Media/Photo/HD/manual.png" alt="Manual" />
+                                    <p>Manual</p>
+                                </div>
+                                <div class="spec-group">
+                                    <img class="spec-icons" src="./Media/Photo/HD/diesel.png" alt="Diesel" />
+                                    <p>Diesel</p>
+                                </div>
+                            </div>
+
+                            <div class="price-card-footer">
+                                <p class="price">25<span>€</span></p>
+                                <a class="btn rezervo-btn" href="#">Rezervo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prices-card">
+
+                        <div class="title-img">
+                            <h3 class="prices-car">Golf VII</h3>
+                            <img class="prices-card-img" src="./Media/Photo/HD/golfvii.png" alt="Golf vii" />
+                        </div>
+
+                        <div class="prices-body">
+                            <div class="car-spec">
+                                <div class="spec-group">
+                                    <img class="spec-icons" src="./Media/Photo/HD/ulese.png" alt="Ulse" />
+                                    <p>4 ulëse</p>
+                                </div>
+                                <div class="spec-group">
+                                    <img class="spec-icons" src="./Media/Photo/HD/manual.png" alt="Manual" />
+                                    <p>Manual</p>
+                                </div>
+                                <div class="spec-group">
+                                    <img class="spec-icons" src="./Media/Photo/HD/diesel.png" alt="Diesel" />
+                                    <p>Diesel</p>
+                                </div>
+                            </div>
+
+                            <div class="price-card-footer">
+                                <p class="price">25<span>€</span></p>
+                                <a class="btn rezervo-btn" href="#">Rezervo</a>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -269,34 +295,42 @@
 
             <section class="testimonials">
                 <div class="testimonial-card">
-                    <img class="testimonial-img" src="./Media/Photo/HD/roan-testimonial.png" alt="" />
-                    <p class="testimonial-name">Roan Kuçi</p>
+                    <div class="img-name">
+                        <img class="testimonial-img" src="./Media/Photo/HD/roan-testimonial.png" alt="" />
+                        <p class="testimonial-name">Roan Kuçi</p>
+                    </div>
                     <p class="testimonial-desc">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae reprehenderit molestiae totam, ducimus odit ipsum.
+                        Lorem ipsum dolor sit, elit amet consectetur isicing. Repudiandae reprehenderit molestiae totam, ducimus odit ipsum.
                     </p>
                 </div>
 
                 <div class="testimonial-card">
-                    <img class="testimonial-img" src="./Media/Photo/HD/kujtim-testimonial.png" alt="" />
-                    <p class="testimonial-name">Kujtim Krasniqi</p>
+                    <div class="img-name">
+                        <img class="testimonial-img" src="./Media/Photo/HD/kujtim-testimonial.png" alt="" />
+                        <p class="testimonial-name">Kujtim Krasniqi</p>
+                    </div>
                     <p class="testimonial-desc">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae reprehenderit molestiae totam, ducimus odit ipsum.
+                        Lorem ipsum dolor sit, elit amet consectetur isicing. Repudiandae reprehenderit molestiae totam, ducimus odit ipsum.
                     </p>
                 </div>
 
                 <div class="testimonial-card">
-                    <img class="testimonial-img" src="./Media/Photo/HD/ardian-testimonial.png" alt="" />
-                    <p class="testimonial-name">Ardian Saraçi</p>
+                    <div class="img-name">
+                        <img class="testimonial-img" src="./Media/Photo/HD/ardian-testimonial.png" alt="" />
+                        <p class="testimonial-name">Ardian Saraçi</p>
+                    </div>
                     <p class="testimonial-desc">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae reprehenderit molestiae totam, ducimus odit ipsum.
+                        Lorem ipsum dolor sit, elit amet consectetur isicing. Repudiandae reprehenderit molestiae totam, ducimus odit ipsum.
                     </p>
                 </div>
 
                 <div class="testimonial-card">
-                    <img class="testimonial-img" src="./Media/Photo/HD/liridon-testimonial.png" alt="" />
-                    <p class="testimonial-name">Liridon Ahmeti</p>
+                    <div class="img-name">
+                        <img class="testimonial-img" src="./Media/Photo/HD/liridon-testimonial.png" alt="" />
+                        <p class="testimonial-name">Liridon Ahmeti</p>
+                    </div>
                     <p class="testimonial-desc">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae reprehenderit molestiae totam, ducimus odit ipsum.
+                        Lorem ipsum dolor sit, elit amet consectetur isicing. Repudiandae reprehenderit molestiae totam, ducimus odit ipsum.
                     </p>
                 </div>
             </section>
@@ -305,7 +339,16 @@
         <footer class="footer">
             <div class="footer-cta">
                 <div class="footer-cta-content">
-                    <img src="./Media/Photo/HD/footer-cta.png" alt="Footer Cta" />
+
+                    <picture>
+                        <source media="(max-width: 660px)" srcset="./Media/Photo/HD/footer-cta-660.png" />
+                        <source media="(max-width: 750px)" srcset="./Media/Photo/HD/footer-cta-750.png" />
+                        <source media="(max-width: 1000px)" srcset="./Media/Photo/HD/footer-cta-1000.png" />
+                        <source media="(max-width: 1500px)" srcset="./Media/Photo/HD/footer-cta-1000.png" />
+                        <img src="./Media/Photo/HD/footer-cta-1000.png" alt="Footer Cta" />
+                    </picture>
+
+
                     <div class="subscribe-group">
                         <h2 class="footer-cta-title">
                             Njoftohu për ofertat më të fundit
@@ -320,6 +363,7 @@
 
             <div class="footer-group">
                 <div class="logo-desc-footer">
+
                     <img src="./Media/Photo/HD/footer-logo.svg" alt="Footer logo" />
                     <p class="footer-desc">
                         Kosova Rent eshte sherbim per dhenien me qera te veturave i cili eshte prej te pareve qe ofrohet si sherbim edhe ne formen online me qasje 24 ore dhe i pergjigjet qfaredo kerkese ne lidhje me renten e veturave nga ana e klientit.
