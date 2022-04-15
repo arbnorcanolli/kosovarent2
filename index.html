@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./CSS/general.css" />
     <link rel="stylesheet" href="./CSS/custom.css" />
     <link rel="stylesheet" href="./CSS/mediaqueries.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>KosovaRent</title>
 </head>
 
@@ -26,7 +28,7 @@
                 </div>
             </nav> -->
 
-            <nav class="nav-bar">
+            <nav class="nav-bar ">
                 <a class="logo-nav" href="index.html">
 
 
@@ -37,7 +39,7 @@
                 <div class="menu-dropdown">
                     <ul class="nav-menu">
                         <li>
-                            <a href="./index.html">Home</a>
+                            <a href="#">Home</a>
                             <div class="nav-border"></div>
                         </li>
                         <li>
@@ -52,19 +54,27 @@
                             <a href="#kontakti">Kontakti</a>
                             <div class="nav-border"></div>
                         </li>
+
+                        <li class="end-div">
+                            <a class="btn kyçu-btn " href="#kontakti">Kyçu</a>
+                            <div class="nav-border"></div>
+                        </li>
+
+                        <li class="end-div">
+                            <a class="regjistrohu-btn" href="#kontakti">Regjistrohu</a>
+                            <div class="nav-border"></div>
+                        </li>
                     </ul>
-                    <a class="kyçu-btn" href="#">Kyçu</a>
-                    <a class="regjistrohu-btn" href="#">Regjistrohu</a>
                 </div>
 
-                <div class="toggler close">
-                    <a href="./index.html">Home</a>
-                    <a href="#sherbimet">Shërbimet</a>
-                    <a href="#veturat">Veturat</a>
-                    <a href="#kontakti">Kontakti</a>
-                    <a class="kyçu-btn" href="#">Kyçu</a>
-                    <a class="regjistrohu-btn" href="#">Regjistrohu</a>
-                </div>
+                <button class="mobile-nav">
+                    <ion-icon class="mobile-nav-icon mobile-menu" name="menu"></ion-icon>
+                    <ion-icon class="mobile-nav-icon mobile-close" name="close"></ion-icon>
+                </button>
+
+                <div class="glass-effect"></div>
+
+
             </nav>
 
             <div class="header-hero-section">
@@ -193,7 +203,7 @@
                             </div>
 
                             <div class="price-card-footer">
-                                <p class="price">25<span>€</span> </p>
+                                <p class="price">25.00<span>€</span> </p>
                                 <a class="btn rezervo-btn" href="#">Rezervo</a>
                             </div>
                         </div>
@@ -202,8 +212,8 @@
                     <div class="prices-card">
 
                         <div class="title-img">
-                            <h3 class="prices-car">Golf VII</h3>
-                            <img class="prices-card-img" src="./Media/Photo/HD/golfvii.png" alt="Golf vii" />
+                            <h3 class="prices-car">Mercedes S class</h3>
+                            <img class="prices-card-img" src="./Media/Photo/HD/mercedes-benz-sclass.png" alt="Golf vii" />
                         </div>
 
                         <div class="prices-body">
@@ -223,7 +233,7 @@
                             </div>
 
                             <div class="price-card-footer">
-                                <p class="price">25<span>€</span></p>
+                                <p class="price">25.00<span>€</span></p>
                                 <a class="btn rezervo-btn" href="#">Rezervo</a>
                             </div>
                         </div>
@@ -232,8 +242,8 @@
                     <div class="prices-card">
 
                         <div class="title-img">
-                            <h3 class="prices-car">Golf VII</h3>
-                            <img class="prices-card-img" src="./Media/Photo/HD/golfvii.png" alt="Golf vii" />
+                            <h3 class="prices-car">Audi a8</h3>
+                            <img class="prices-card-img" src="./Media/Photo/HD/audi-a8.png" alt="Golf vii" />
                         </div>
 
                         <div class="prices-body">
@@ -253,7 +263,7 @@
                             </div>
 
                             <div class="price-card-footer">
-                                <p class="price">25<span>€</span></p>
+                                <p class="price">22.00<span>€</span></p>
                                 <a class="btn rezervo-btn" href="#">Rezervo</a>
                             </div>
                         </div>
@@ -262,8 +272,8 @@
                     <div class="prices-card">
 
                         <div class="title-img">
-                            <h3 class="prices-car">Golf VII</h3>
-                            <img class="prices-card-img" src="./Media/Photo/HD/golfvii.png" alt="Golf vii" />
+                            <h3 class="prices-car">Honda</h3>
+                            <img class="prices-card-img" src="./Media/Photo/HD/Honda jazz.png" alt="Golf vii" />
                         </div>
 
                         <div class="prices-body">
@@ -283,7 +293,7 @@
                             </div>
 
                             <div class="price-card-footer">
-                                <p class="price">25<span>€</span></p>
+                                <p class="price">15.00<span>€</span></p>
                                 <a class="btn rezervo-btn" href="#">Rezervo</a>
                             </div>
                         </div>
@@ -399,7 +409,7 @@
         </footer>
     </div>
 
-    <script src="./Javascript/"></script>
+    <script src="./Js/script.js"></script>
 </body>
 
 </html>

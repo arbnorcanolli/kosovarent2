@@ -18,9 +18,38 @@
     position: relative;
 }
 
+.mobile-nav {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+.mobile-nav-icon:hover {
+    cursor: pointer;
+}
+
+.mobile-nav-icon {
+    font-size: 2rem;
+    border: none;
+    background-color: none;
+}
+
+.mobile-nav-icon[name="close"] {
+    display: none;
+}
+
+.glass-effect {
+    display: none;
+}
+
+.toggle {
+    display: none;
+}
+
 .nav-bar {
     margin-top: 1.5rem;
     display: flex;
+    gap: 2rem;
     color: #333;
 }
 
@@ -31,18 +60,23 @@
 
 .menu-dropdown {
     width: 90%;
+    margin-left: auto;
     justify-self: center;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     font-weight: 500;
 }
 
-.menu-dropdown li+li {
+
+/* .menu-dropdown li+li {
     margin-left: 4.375em;
-}
+} */
 
 .nav-menu {
     display: flex;
+    gap: 3.5rem;
+    align-items: center;
 }
 
 .nav-border {
@@ -58,6 +92,10 @@
     padding: 0.5em 1em;
     border: 2px solid transparent;
     border-radius: 0.5em;
+}
+
+.end-div .nav-border {
+    display: none;
 }
 
 a.kyçu-btn:hover {
@@ -85,10 +123,14 @@ a.kyçu-btn:hover {
     background-color: #FFBB33;
     padding: 0.5em 1em;
     border-radius: 0.5em;
-    margin-left: 3em;
     border: 2px solid transparent;
     transition: all 0.3s ease;
     color: white;
+    justify-self: flex-end;
+}
+
+.regjistrohu-btn .nav-border {
+    display: none;
 }
 
 .regjistrohu-btn:hover {
@@ -99,6 +141,14 @@ a.kyçu-btn:hover {
 
 .nav-menu li {
     overflow: hidden;
+}
+
+.nav-menu .end-div {
+    float: right;
+}
+
+.nav-menu a {
+    display: block;
 }
 
 .menu-dropdown .nav-menu li:hover .nav-border {
@@ -205,11 +255,67 @@ a.kyçu-btn:hover {
     border-radius: 0.5em;
     padding: 1em 2em;
     border: 2px solid #002942;
-    background-color: transparent;
-    color: #002942;
+    background-color: #002942;
+    color: white;
     font-size: 1.2rem;
     letter-spacing: 1px;
     font-weight: 500;
+    transition: all 0.5s ease-in;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-cta:hover {
+    background-color: transparent;
+    color: #002942;
+}
+
+.hero-cta:hover::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    animation: shine 0.6s ease;
+    transform: skew(-45deg);
+}
+
+.hero-cta:hover::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 1%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    animation: shine2 0.35s ease-in;
+    transform: skew(-45deg);
+}
+
+@keyframes shine {
+    0% {
+        visibility: visible;
+        background-color: rgba(255, 255, 255, 0.2);
+        left: 0%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes shine2 {
+    0% {
+        visibility: visible;
+        background-color: rgba(255, 255, 255, 0.5);
+        left: 00%;
+    }
+    100% {
+        left: 100%;
+    }
 }
 
 
@@ -421,6 +527,11 @@ a.kyçu-btn:hover {
 
 .price {
     font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.price span {
+    font-size: 0.8em;
 }
 
 .price-card-footer .rezervo-btn {
