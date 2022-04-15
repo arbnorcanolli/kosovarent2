@@ -280,6 +280,9 @@
         .prices-card {
             grid-column: span 4;
         }
+        .testimonial-img {
+            max-width: 3rem;
+        }
         .logo-desc-footer {
             grid-column: span 4;
         }

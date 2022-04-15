@@ -22,6 +22,8 @@ Font-size: Header-Title: 56px,
            h2:32px
            Services-desc : 20px 
 
+           #f5f8ff
+
 */
 
 :root {
@@ -40,7 +42,7 @@ body {
 }
 
 html {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 h2 {
