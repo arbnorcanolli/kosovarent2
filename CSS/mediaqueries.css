@@ -144,7 +144,7 @@
                 z-index: 999;
             }
             .open-nav .menu-dropdown {
-                opacity: 100%;
+                opacity: 80%;
                 pointer-events: auto;
                 visibility: visible;
                 left: 0%;
@@ -186,9 +186,12 @@
                 gap: 2.4rem;
             }
             .nav-menu {
-                background-color: rgb(255, 255, 255, .8);
+                background-color: rgb(255, 255, 255, .5);
                 padding: 3rem 4.5rem;
                 border-radius: 0.5em;
+            }
+            .nav-menu li {
+                margin-bottom: 0.5em;
             }
         }
         
